@@ -164,10 +164,7 @@
             </div>
     
 
-            
-
-
-                 </div >
+        </div >
 
                  <div class="touch_with_us_btn">
                 <button > <a href="contact.php">Touch with Us</a></button>
