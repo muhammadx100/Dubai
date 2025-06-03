@@ -35,7 +35,12 @@
 
                                 <div>
                                         <form method="POST" action="subscribe.php"> 
-                                                <input type="email" name="email"  class="email" placeholder="Your Email address here">
+                                                <input type="email" name="email"
+                                                  class="email" placeholder="Your Email address here"
+                                                  required 
+                                                 pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$"
+                                                  title="Please enter a valid Gmail address (e.g., ali@gmail.com)"
+                                                  >
                                                 <button type="submit" class="Subscribe_btn">Subscribe Now</button>
                                         </form>
                                        
@@ -74,15 +79,7 @@
                         </div>
 
 
-                        <div class="detail">
-                                        <h1>Utility Pages</h1>
-                                        <h6><a href=""> Style Guide</a></h6>
-                                        <h6><a href=""> Licenses</a></h6>
-                                        <h6><a href=""> Changelog</a></h6>
-                                        <h6><a href=""> Password</a></h6>
-                                        <h6><a href=""> Not Found</a></h6>
-                                        <h6><a href=""> More Template</a></h6>
-                        </div>
+                       
 
 
                         <div class="Contact_form">
@@ -104,8 +101,37 @@
              <h1> | <span> AL-HAZA  </span>  |the Name of Loyalty</h1>
 
       </footer>
+
+
+        <script>
+  
+           document.addEventListener("DOMContentLoaded", function () {
+            const emailInput = document.querySelector(".email");
+            const errorMessage = document.getElementById("error-message");
+
+            emailInput.addEventListener("input", function () {
+                const emailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+                if (!emailPattern.test(this.value)) {
+                    this.setCustomValidity("Please enter a valid Gmail address (e.g., ali@gmail.com)");
+                    errorMessage.textContent = "Invalid Gmail address!";
+                } else {
+                    this.setCustomValidity("");
+                    errorMessage.textContent = "";
+                }
+            });
+
+            document.getElementById("emailForm").addEventListener("submit", function (event) {
+                if (!emailInput.checkValidity()) {
+                    event.preventDefault(); // Prevent form submission if invalid
+                    alert("Please enter a valid Gmail address.");
+                }
+            });
+        });
+    </script>
+
         
 </body>
 </html>
 
   
+
