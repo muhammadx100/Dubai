@@ -52,13 +52,16 @@
                    <input type="text" name="Q-name" placeholder="Enter Your Name"> <br>
 
                    <label>Email</label> <br>
-                   <input type="email" name="Q-email" placeholder="Enter Your Email"> <br>
+                   <input  type="email" class="email" name="email" placeholder="Enter Your Email"
+                        required  pattern="[a-zA-Z0-9._%+-]+@gmail\.com$" 
+                        title="Please enter a valid Gmail address (e.g., ali@gmail.com)" >       <br>
 
                     <label>Phone</label> <br>
-                   <input type="text" name="Q-phone_number" placeholder="Enter Your Phone Number"> <br>
+                   <input type="text" name="Q-phone_number" placeholder="Enter Your Phone Number"
+                   required  pattern="03[0-9]{2}-[0-9]{7}" title="Please enter a valid Pakistani phone number (e.g., 0300-1234567)"> <br>
 
                    <label>Message</label> <br>
-                   <textarea name="Q-message" placeholder="Type your message here"></textarea>
+                   <textarea required  name="Q-message" placeholder="Type your message here"></textarea>
 
 
                    <button type="submit"> Submit</button>
@@ -69,7 +72,32 @@
         </div>
 
       </div>
+      
+      <script>
+  
+           document.addEventListener("DOMContentLoaded", function () {
+            const emailInput = document.querySelector(".email");
+            const errorMessage = document.getElementById("error-message");
 
+            emailInput.addEventListener("input", function () {
+                const emailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+                if (!emailPattern.test(this.value)) {
+                    this.setCustomValidity("Please enter a valid Gmail address (e.g., ali@gmail.com)");
+                    errorMessage.textContent = "Invalid Gmail address!";
+                } else {
+                    this.setCustomValidity("");
+                    errorMessage.textContent = "";
+                }
+            });
+
+            document.getElementById("emailForm").addEventListener("submit", function (event) {
+                if (!emailInput.checkValidity()) {
+                    event.preventDefault(); // Prevent form submission if invalid
+                    alert("Please enter a valid Gmail address.");
+                }
+            });
+        });
+    </script>
       
   
 </body>
