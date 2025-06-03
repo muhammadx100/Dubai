@@ -1,0 +1,40 @@
+.agent-form{
+  display: flex;
+  flex-wrap: wrap;
+  gap:2px;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 80px;
+  overflow: hidden;
+ 
+ 
+}
+
+.agent-img img{
+  width: 290px;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  filter: drop-shadow(2px 2px 8px rgba(0,0,0,0.5));
+  transition: transform 0.15s;
+}
+
+.agent-img:hover img{
+ transform: scale(1.1);
+}
+
+.agent-detail{
+  background-color: rgb(19, 19, 73);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+   transition: transform 0.15s;
+}
+.agent-detail:hover{
+   transform: scale(1.1);
+}
+
+.agent-detail span{
+  color: rgb(207, 90, 48);
+}

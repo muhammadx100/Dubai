@@ -1,0 +1,104 @@
+.contact_detail{
+  margin: 0;
+  margin-bottom: 80px;
+  margin-top: 80px;
+  padding: 20px 0px;
+  box-shadow: 5px 5px 10px rgba(11, 11, 46, 0.5);
+  border-radius: 5px;
+}
+
+
+
+.contact_detail-1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+
+
+.online_platforms{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.online_platforms a img{
+       width:20px;
+       height: 20px;
+       object-fit: cover;
+       margin-top: 10px;
+       transform: scale(1.2);
+}
+
+.online_platforms a img:hover{
+   
+       transform: scale(1.5);
+       box-shadow: 5px 5px 10px rgba(11, 11, 46, 0.5);
+}
+
+
+
+.logo-bottom img{
+       width:300px;
+       height: 100px;
+}
+
+.User_Subscribe{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+}
+
+.User_Subscribe h1{
+  color: rgb(23, 23, 78);
+  font-size: 45px;
+  margin: 0;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.User_Subscribe h6{
+  color: rgb(133, 115, 115);
+  font-size: 20px;
+  width: 550px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.email{
+  width: 250px;
+  height: 45px;
+  border-radius: 5px;
+  border: solid rgb(133, 115, 115);
+  border-width: 1px;
+  margin-right: 10px;
+}
+
+.email::placeholder{
+  padding: 0px 10px;
+}
+
+.Subscribe_btn{
+ width: 150px;
+  height: 45px;
+  border-radius: 5px;
+  border: solid rgb(133, 115, 115);
+  border-width: 1px;
+  margin-right: 10px;
+  background-color:  rgb(11, 11, 46);
+  color: white;
+  letter-spacing: 1px;
+
+}
+
+
+  .Subscribe_btn:hover{
+    background-color: white;
+    color: rgb(11, 11, 46);;
+  }   
+       
+       
+

@@ -1,0 +1,52 @@
+.overall_services{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-around;
+}
+
+.Contact_form{
+  background-color: rgb(243, 159, 34);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+
+.Contact_form p img{
+  width:20px;
+  height: 20px;
+  object-fit: cover;
+  margin: 0;
+  margin-right: 5px;
+}
+
+
+.detail{
+  margin: 0;
+  padding: 0;
+
+  
+
+
+}
+
+.detail h1{
+    color: rgb(29, 74, 105);
+}
+
+.detail a{
+  text-decoration: none;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  color: rgb(145, 134, 134);
+  
+}
+
+.detail a:hover{
+  
+  color: rgb(71, 58, 58);
+  
+}

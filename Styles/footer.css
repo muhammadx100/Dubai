@@ -1,0 +1,16 @@
+footer{
+  margin: 20px 0px;
+  padding: 10px 10px;
+
+  border-width: 1px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5)
+      , -1px -1px 10px rgba(0,0,0,0.5);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+footer h1 span{
+  color:orangered;
+}
