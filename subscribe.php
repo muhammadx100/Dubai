@@ -12,8 +12,7 @@
    $db_responce = $connection->query($sql);
 
    if( $db_responce === true){
-     echo "<script>alert('Data Submitted Succesfullt');</script>";
-     
+     include 'success-card.php';
 
    }
    else{

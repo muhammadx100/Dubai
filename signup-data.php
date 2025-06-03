@@ -1,7 +1,7 @@
 <?php
 
    include 'database.php';
-    echo "informatio received";
+  
 
    
 
@@ -9,7 +9,7 @@
    $user_Name = $_POST["FullName"];
    $user_DOB = $_POST["DOB"];
    $user_phone_Number = $_POST["phoneNumber"];
-   $user_gmail = $_POST["gmail"];
+   $user_gmail = $_POST["email"];
    $user_password = $_POST["Password"];
 
    
@@ -27,15 +27,8 @@
    
     $db_responce = $connection->query($sql);
 
-    if($db_responce === true){
-      while($row = $db_responce->fetch_assoc()){
-        echo $row;
-      }
-      echo "information submitted scessfully";
-    }
-    else{
-            echo "Error! invalid information";
-
-    }
+    
+      include 'success-card.php';
+  
 
 ?>
