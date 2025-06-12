@@ -1,0 +1,203 @@
+body{
+  background-color: white;
+}
+
+/* process */
+.heading_div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(38, 38, 124);
+  letter-spacing: 1px;
+  font-size: 25px;
+}
+
+
+
+/* ////////// */
+.about_us {
+  display: flex;
+  justify-content: space-between; /* Space out the divs */
+  align-items: center; /* Align content */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  padding: 10px ;
+  margin: 30px ;
+  background-image: url(/images/634cfc34862a67f5a4b6193f_hero-left-particle.png);
+}
+
+.about_us .img_div {
+  flex: 35%; /* Makes both divs flexible */
+  min-width: 400px; /* Prevents divs from shrinking too much */
+  padding: 20px; /* Adds spacing */
+  background-color: transparent;
+}
+
+.about_us .content_div {
+  flex: 35%; /* Makes both divs flexible */
+  min-width: 400px; /* Prevents divs from shrinking too much */
+  padding: 20px; /* Adds spacing */
+  background-color: transparent;
+}
+
+
+
+
+.about_us div img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.content_div{
+  padding: 10px;
+}
+
+.content_div h1{
+   color: rgb(22, 22, 82);
+}
+.content_div h2{
+   color: rgb(22, 22, 82);
+}
+.content_div  span{
+   color: orangered;
+}
+
+.content_div p{
+   color: rgb(109, 101, 101);
+   font-size: 15px;
+   padding-left: 10px;
+}
+
+
+
+.process{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(255, 231, 231);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.process div{
+  flex:30%;
+  min-width: 400px;
+}
+.process img{
+  width :80%;
+  height:auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+/* property_team */
+
+.property_team{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 200px;
+
+}
+
+.member_card{
+  display: flex;
+  
+  flex-direction: column;
+  border-radius: 10px;
+  border-width: 1px;
+  border: solid black;
+}
+
+.agent_detail{
+  transition: background 0.15s;
+  border-radius: 10px;
+  padding: 10px;
+  background: rgb(233, 224, 224);
+
+}
+
+.agent_detail:hover{
+  background: #ffbb50;
+}
+.agent_detail:hover h2{
+  color: white;
+}
+
+.agent_img{
+
+}
+
+.agent_img img{
+      width:100%;
+      height: 220px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 10px;
+}
+
+/* <!-- Image --> */
+
+.agent_name h1{
+  color: rgb(15, 15, 68);
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+ /* <!-- Data --> */
+.agent_data{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ vertical-align: middle;
+}
+
+
+.agent_socalMedia_accounts{
+
+}
+.agent_socalMedia_accounts img{
+  width:30px;
+  height:30px;
+  margin-left: 10px;
+}
+
+
+
+.instagram_img:hover{
+
+}
+
+
+
+
+
+
+
+/* media query */
+
+
+@media (max-width: 768px) {
+  .about_us {
+    flex-direction: column; /* Stack divs on smaller screens */
+    align-items: flex-start;
+  }
+
+  
+ 
+
+  
+
+} 

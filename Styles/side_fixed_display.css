@@ -1,0 +1,31 @@
+.side_fixed_display{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  
+  top: 50%;
+
+  background-color: rgb(180, 180, 180);
+  width: 35px;
+  height: 120px;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.side_fixed_display a img{
+       width:20px;
+       height: 20px;
+       object-fit: cover;
+       margin-top: 10px;
+       transform: scale(1.2);
+      margin-left: 8px;
+      
+}
+
+.side_fixed_display a img:hover{
+       
+       transform: scale(1.5);
+      
+      
+}

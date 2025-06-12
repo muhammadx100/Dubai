@@ -1,0 +1,90 @@
+.blog{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.blog-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.blog-header h5{
+  margin:0;
+  letter-spacing: 4px;
+  font-size: 25px;
+}
+
+.blog-header span{
+  color: orangered;
+}
+
+
+.blog-header h1{
+
+  letter-spacing: 4px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+
+.blog-1{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blog-1 img{
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+ 
+}
+
+.blog-1 h6{
+  margin-top: 20px;
+  letter-spacing: 1px;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.blog-1 span{
+  color: orangered;
+}
+
+.blog-1 h1{
+ color: rgb(15, 15, 51);
+ margin: 0;
+ margin-top: 20px;
+ margin-bottom: 40px;
+}
+
+
+.blog button{
+   width: 180px;
+   height:60px;
+   border-radius: 10px;
+   border:none;
+   color: rgb(15, 15, 51);
+   font-size: 15px;
+   box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+
+.blog button:hover {
+      background-color: rgb(15, 15, 51);
+      color: white;
+}
+  @media (max-width: 1024px) {
+            .blog-list {
+                flex: 1;
+               
+            }
+        }

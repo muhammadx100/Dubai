@@ -1,0 +1,30 @@
+
+
+.user_profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.user_profile h1{
+  color:rgb(20, 20, 102);
+  width: 100%;
+  padding: 5px 20px;
+  margin-left: 40px;
+}
+
+.profile-img{
+  width: 110px;
+  height:110px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: drop-shadow(5px 5px 10px rgba(0,0,0,.5));
+  margin: 50px 0px;
+  object-position: top;
+  
+}
+.profile-img:hover{
+  transform: scale(1.1);
+}
+
