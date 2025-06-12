@@ -1,4 +1,8 @@
-
+<?php
+session_start();
+ include 'C:/xampp1/htdocs/dubai/header.php';
+          
+?>
 
 <html>
 <head>
@@ -202,6 +206,7 @@
     if (!empty($properties)) {
         foreach ($properties as $property) {
             $id = htmlspecialchars($property["id"]);
+            $_SESSION["property_id"] =  $id;
             $imgUrl = !empty($property["image"]) ? htmlspecialchars(getImageUrl($property["image"])) : "";
             $price = htmlspecialchars($property["price"]);
             $title = htmlspecialchars($property["title"]);
@@ -228,6 +233,7 @@
             echo "<p>Bathrooms: $bathroom</p>";
             echo "<p>Parking Spots: $parking</p>";
             echo "<p>Area (sq ft): $area</p>";
+           
             echo "</div>";
             echo "<button type='button' class='update_btn' onclick=goto() > Update Info </button>" ;  
             // Removed update button and edit form

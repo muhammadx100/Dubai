@@ -100,9 +100,9 @@ include 'sliding-window.php';
         
 
         <div class="button-container">
-            <button><a href="clientData/update-profile.php">Update Profile</a></button>
-            <button><a href="clientData/client-add-new-property.php">Add Property</a></button>
-            <button><a href="clientData/list-property.php">View Listed Property</a></button>
+            <button><a href="update-profile.php">Update Profile</a></button>
+            <button><a href="client-add-new-property.php">Add Property</a></button>
+            <button><a href="list-property.php">View Listed Property</a></button>
         </div>
 
         <a class="logout-link" href="logout.php">Log out</a>

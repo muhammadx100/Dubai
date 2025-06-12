@@ -123,35 +123,35 @@
 
     <fieldset>
       <label for="title">Property Title</label>
-      <input type="text" id="title" name="title" placeholder="Enter property title" required />
+      <input type="text" id="title" name="title" placeholder="Enter property title"  />
     </fieldset>
 
     <fieldset>
       <label for="price">Price</label>
-      <input type="number" id="price" name="price" min="0" placeholder="Enter price in USD" required />
+      <input type="number" id="price" name="price" min="0" placeholder="Enter price in USD"  />
     </fieldset>
 
     <fieldset>
       <label for="address">Address</label>
-      <textarea id="address" name="address" placeholder="Enter full address" required></textarea>
+      <textarea id="address" name="address" placeholder="Enter full address" ></textarea>
     </fieldset>
 
     <div class="grid-two-cols">
       <fieldset>
         <label for="bedroom">Bedrooms</label>
-        <input type="number" id="bedroom" name="bedroom" min="0" placeholder="Number of bedrooms" required />
+        <input type="number" id="bedroom" name="bedroom" min="0" placeholder="Number of bedrooms"  />
       </fieldset>
       <fieldset>
         <label for="bathroom">Bathrooms</label>
-        <input type="number" id="bathroom" name="bathroom" min="0" placeholder="Number of bathrooms" required />
+        <input type="number" id="bathroom" name="bathroom" min="0" placeholder="Number of bathrooms"  />
       </fieldset>
       <fieldset>
         <label for="parking">Parking Spots</label>
-        <input type="number" id="parking" name="parking" min="0" placeholder="Number of parking spots" required />
+        <input type="number" id="parking" name="parking" min="0" placeholder="Number of parking spots"  />
       </fieldset>
       <fieldset>
         <label for="area">Area (sq ft)</label>
-        <input type="number" id="area" name="area" min="0" placeholder="Size in square feet" required />
+        <input type="number" id="area" name="area" min="0" placeholder="Size in square feet"  />
       </fieldset>
     </div>
 
@@ -169,7 +169,8 @@
 
 </main>
 
-<script>
+
+<!-- <script>
   const form = document.getElementById('property-update-form');
 
   form.addEventListener('submit', function(event) {
@@ -183,6 +184,9 @@
     // Demo alert - here you would typically do AJAX or form submission
     alert('Property details updated (demo only, no backend connection).');
   });
-</script>
+</script> -->
+
+
+
 </body>
 </html>
