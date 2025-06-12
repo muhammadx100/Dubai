@@ -8,6 +8,10 @@
         border-bottom-left-radius: 80px;
         border-bottom-right-radius: 80px;
         box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        background-image: url(/images/homepage.jpg);
         
 }
 
