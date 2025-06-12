@@ -233,18 +233,10 @@
         <section class="HomePage">
              
 
-          <!-- <div class="card">
-             
-               <div class="CEO_card">
-                     <img src="images/Sheik_photo.png" alt="CEO_Image ">
-                     <h4>Co-Founder</h4>
-                     <h3>Rehman-Ibn-Abubakkar</h3>
-          </div> -->
+       
 
          
-              
-
-          </div>
+            
 
           <div class="center_contant">
                           
@@ -254,6 +246,11 @@
              
                 <button class="Explore_btn"> <a href="properties.php"> Explore Property </a> </button>
                 
+          </div>
+
+
+          <div class="image"> 
+             <img src="images/home-img-1.png">
           </div>
 
       </section>
